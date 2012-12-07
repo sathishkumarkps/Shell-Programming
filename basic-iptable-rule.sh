@@ -11,4 +11,9 @@
 /sbin/iptables -A INPUT -p tcp --dport 80 -m state --state NEW -j ACCEPT
 /sbin/iptables -A INPUT -p tcp --dport 443 -m state --state NEW -j ACCEPT
 
-# 
+# Clear all rules
+
+/sbin/iptables -F
+
+#
+
