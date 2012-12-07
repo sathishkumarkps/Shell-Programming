@@ -15,5 +15,9 @@
 
 /sbin/iptables -F
 
+# Streaming Rules 
 #
+# RTMP 
+#
+/sbin/iptables -A INPUT -p tcp --dport 1935 -m state --state NEW,ESTABLISHED -j ACCPET  
 
